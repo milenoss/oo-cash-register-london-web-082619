@@ -10,10 +10,10 @@ class CashRegister
     @@cart = [] 
   end
   
-  def add_item(title,price,quantity = 0)
+  def add_item(title,price,quantity = 1)
     self.total += quantity * price
     self.cart << {title: title, price: price, quantity: quantity}
-   
+   binding.pry
    end 
     
 end
