@@ -1,4 +1,4 @@
-
+require 'pry'
 class CashRegister
  attr_accessor :cart, :total  #returns total and cart. getters.
  attr_reader :discount   #gets the discount
@@ -10,7 +10,10 @@ class CashRegister
   end
   
   def add_item(title,price,quantity = 0)
-    quantity.times{title: title, price: price, 
+    quantity.times{@cart <<{title: title, price: price, quantity: quantity}
+    @total += total 
+    
+    binding.pry
    end 
     
 end
