@@ -1,10 +1,11 @@
 
 class CashRegister
-  cart [] 
+  @@cart = [] 
   
   def initialize(discount)
     @discount = discount
     @total = 0 
+    @@cart 
   end
   
   def total 
