@@ -27,7 +27,7 @@ attr_accessor :total, :cart
   
   
   def items 
-    @cart.map{|items|items}
+    @cart.map{|items|items[:title]}
   end
 end
 
