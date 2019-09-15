@@ -24,6 +24,10 @@ attr_accessor :total, :cart
         "There is no discount to apply."
     end
   end
+  
+  
+  def items 
+    @cart.map{|items|items}
 end
 
 #   def items
