@@ -17,6 +17,8 @@ class CashRegister
   #   self.cart << {title: title, price: price, quantity: quantity}
   # binding.pry
    end 
+   
+   def 
     
 end
 
