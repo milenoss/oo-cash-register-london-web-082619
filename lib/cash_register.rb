@@ -11,17 +11,12 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-        @total += price * quantity
-        quantity.times {@cart << {title: title, price: price, quantity: quantity}}
-        #binding.pry
-    end
+    @total = 
+   end 
    
    def apply_discount
     if @discount 
-       @total += @total *( 100 - @discount) /100
-       binding.pry
-       return "After the discount, the total comes to $#{@total}."
-
+      self.total += total*( 100 - @discount) /total
       else 
       "There is no discount to apply"
     end
