@@ -1,13 +1,4 @@
 
-class CashRegister
-  attr_reader :discount 
-  attr_accessor :car, :total
-  def initialization(discount = nil )
-  @discount = discount
-  @total = 0
-  @cart = []
-  end
-end
 
 
 
