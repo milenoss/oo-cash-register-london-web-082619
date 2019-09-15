@@ -1,5 +1,6 @@
 
 class CashRegister
+  cart [] 
   
   def initialize(discount)
     @discount = discount
