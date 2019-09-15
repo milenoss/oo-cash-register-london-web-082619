@@ -18,7 +18,8 @@ class CashRegister
   # binding.pry
    end 
    
-   def apply_coupon
+   def apply_discount
+     self.total 
      
   end
 end
