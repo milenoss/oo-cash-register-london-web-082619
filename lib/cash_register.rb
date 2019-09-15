@@ -28,6 +28,7 @@ attr_accessor :total, :cart
   
   def items 
     @cart.map{|items|items}
+  end
 end
 
 #   def items
