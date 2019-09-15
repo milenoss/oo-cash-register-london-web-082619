@@ -22,9 +22,9 @@ attr_accessor :total, :cart
       "After the discount, the total comes to $#{@total}."
   else
         "There is no discount to apply."
+    end
   end
-  end
-  
+end
 
 #   def items
 #     @cart.map{|items| items[:title]}
