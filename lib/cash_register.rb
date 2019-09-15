@@ -1,19 +1,16 @@
 
 class CashRegister
-  @@cart = [] 
+ attr_accessor :cart, :total  #returns total and cart. getters.
+ attr_reader :discount   #gets the discount
   
-  def initialize(discount)
+  def initialize(discount = nil)
     @discount = discount
     @total = 0 
-    @@cart 
-  end
-  
-  def total 
-    @total
+    @@cart = [] 
   end
   
   def add_item(title,price,quantity = 0)
-   
+    
    end 
     
 end
