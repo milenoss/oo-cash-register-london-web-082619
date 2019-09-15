@@ -11,7 +11,7 @@ class CashRegister
   end
   
   def add_item(title,price,quantity = 0)
-    quantity.times{@cart <<{title: title, price: price, quantity: quantity}
+    quantity.times{@cart << {title: title, price: price, quantity: quantity}
         binding.pry
 
     @total += total 
