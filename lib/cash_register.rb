@@ -29,6 +29,10 @@ attr_accessor :total, :cart
   def items 
     @cart.map{|items|items[:title]}
   end
+  
+  def void_last_transaction
+    @total -= @cart.last[:price] * @cart.last[:quantity]
+  end
 end
 
 #   def items
