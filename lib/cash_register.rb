@@ -20,8 +20,8 @@ class CashRegister
    
    def apply_discount
     if @discount 
-      self.total += total*( 100 - @discount) /total
-    else 
+      total += total*( 100 - @discount) /total
+      else 
       "There is no discount to apply"
     end
   end
