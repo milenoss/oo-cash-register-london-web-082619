@@ -1,4 +1,5 @@
 require 'pry'
+
 class CashRegister
  attr_accessor :cart, :total  #returns total and cart. getters.
  attr_reader :discount   #gets the discount
